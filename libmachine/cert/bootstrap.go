@@ -54,7 +54,7 @@ func createCert(authOptions *auth.Options, org string, bits int) error {
 
 	// Used to generate the client certificate.
 	certOptions := &Options{
-		Hosts:       []string{""},
+		Hosts:       []string{"127.0.0.1"},
 		CertFile:    clientCertPath,
 		KeyFile:     clientKeyPath,
 		CAFile:      caCertPath,
